@@ -1,0 +1,756 @@
+/*setting the websites body.*/
+
+body {
+    height: auto;
+    background-color: #ffffff;
+    font-family: 'Didact Gothic', sans-serif;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 500;
+    line-height: 26px;
+    padding: 0em;
+    margin: 0em;
+    font-size: .78em;
+    color: #484a4c;
+}
+
+/*Possitioning logo within the nav to the left hand side*/
+
+#logo {
+    float: left;
+}
+
+/*This is one page website to make it easier each subject has been assigned its own box valled page_. This is the title page where nothing is placved except for background image and nav.*/
+
+#page1 {
+    background-image: url(style/lilacbees.jpg);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    text-align: center;
+    height: 80vh;
+    margin: 0;
+    padding: 0;
+
+}
+
+/*color background and possitioning for title page*/
+
+#page1background {
+    margin: 8% 15% 5% 15%;
+    height: auto;
+    color: #fff;
+    width: 70%;
+    z-index: +2;
+}
+
+/*Sizing for work page*/
+
+#1page1 {
+    height: 80vh;
+    margin: 0;
+}
+
+/*
+#aboutpage1background {
+    margin: 100px 50px 50px 50px;
+    height: auto;
+    color: #fff;
+}
+*/
+
+/*sizing for all pages tgat follow. It will stay seperated until later date due to the fact some changes may take place*/
+
+#page2background {
+    margin: 100px 50px 50px 50px;
+    height: auto;
+    color: #fff;
+}
+
+#page3background {
+    margin: 100px 50px 50px 50px;
+    height: auto;
+    color: #fff;
+
+}
+
+#page4background {
+    margin: 100px 50px 50px 50px;
+    height: auto;
+    color: #fff;
+
+}
+
+#page5background {
+    margin: 100px 50px 50px 50px;
+    height: auto;
+    color: #fff;
+
+}
+
+#page6background {
+    margin: 100px 50px 50px 50px;
+    height: auto;
+    color: #fff;
+
+}
+
+/* About page picture. This possitions the photo to the left hand side of the text. */
+
+#aboutpic {
+    background-position: top;
+    background-repeat: no-repeat;
+    text-align: center;
+    margin: 100px 50px 50px 140px;
+    width: 40%;
+}
+
+/* This sets up three colums for the photo galeries*/
+
+#photos {
+    /* Prevent vertical gaps */
+    line-height: 10px;
+    -webkit-column-count: 3;
+    -webkit-column-gap: 5px;
+    -moz-column-count: 3;
+    -moz-column-gap: 5px;
+    column-count: 3;
+    column-gap: 5px;
+}
+
+
+/*
+#work {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+*/
+
+#photos img {
+    /* Just in case there are inline attributes */
+    margin: 10px;
+    width: 100% !important;
+    height: auto !important;
+}
+
+/*blog page*/
+
+* {
+    box-sizing: border-box;
+}
+
+
+/* Carousels possitioning within the page*/
+
+.carousel {
+    position: relative;
+    width: 600px;
+    height: 400px;
+    overflow: hidden;
+    margin: 0 auto;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+}
+
+/* Hover changens */
+
+.carousel:hover .slide:after,
+.carousel:hover .counter,
+.carousel:hover .slide:before {
+    opacity: 1;
+}
+
+.slide {
+    float: right;
+    position: absolute;
+    z-index: 1;
+    width: 600px;
+    height: 400px;
+    background-color: #eee;
+    text-align: center;
+    transition: opacity 0.4s;
+    opacity: 1;
+}
+
+.slide:before {
+    content: attr(annot);
+    display: block;
+    position: absolute;
+    left: 20px;
+    bottom: 20px;
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 14px;
+    font-weight: 300;
+    z-index: 12;
+    opacity: 0;
+    transition: opacity 0.3s;
+    text-shadow: 0 0 1px #000;
+}
+
+.slide:after {
+    content: attr(slide);
+    display: block;
+    position: absolute;
+    bottom: 0;
+    transition: opacity 0.3s;
+    width: 100%;
+    height: 80px;
+    opacity: 0;
+    background-image: linear-gradient(transparent, rgba(0, 0, 0, 0.5));
+    text-align: left;
+    text-indent: 549px;
+    line-height: 101px;
+    font-size: 13px;
+    color: rgba(255, 255, 255, 0.9);
+    text-shadow: 0 0 1px #000;
+}
+
+.counter {
+    position: absolute;
+    bottom: 20px;
+    right: 1px;
+    height: 20px;
+    width: 60px;
+    z-index: 2;
+    text-align: center;
+    color: #fff;
+    line-height: 21px;
+    font-size: 13px;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.blog_lv {
+    top: 0;
+    right: 0;
+    float: right;
+    position: absolute;
+    margin-top: 0;
+    z-index: 9;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.blog_lv:checked {
+    z-index: 8;
+}
+
+.blog_lv:checked + .slide {
+    opacity: 0;
+}
+
+.blog_lv:checked:nth-child(1):checked {
+    z-index: 9;
+}
+
+.blog_lv:nth-child(1):checked {
+    float: left;
+    z-index: 9;
+}
+
+.blog_lv:nth-child(1):checked + .slide {
+    opacity: 1;
+}
+
+.blog_lv:nth-child(1):checked ~ .blog_lv {
+    float: left;
+    z-index: 8;
+}
+
+.blog_lv:nth-child(1):checked ~ .blog_lv + .slide {
+    opacity: 0;
+}
+
+.blog_lv:nth-child(1):checked ~ .blog_lv:checked {
+    z-index: 9;
+}
+
+.blog_lv:nth-child(1):checked ~ .blog_lv:checked + .slide {
+    opacity: 1;
+}
+
+
+.button1 {
+    background-color: ;
+    width: auto;
+    color: #555555;
+    border: 2px solid #555555;
+    text-decoration: none;
+    font-size: 20;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 6px;
+    padding: 3px 32px;
+    margin: 20px 20px 20px 20px;
+}
+
+.button1:hover {
+    background-color: #555555;
+    color: #808D24;
+}
+
+.button1 {
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+}
+
+/*end*/
+
+/* footer beginig*/
+
+#container {
+
+    padding: 30px 30px 80px 30px;
+    margin: 0px;
+    width: 100%;
+}
+
+
+
+#contactdiv {
+    justify-content: center;
+    height: auto;
+    background-color: #ffffff;
+}
+
+#contact {
+    text-align: center;
+    padding: 40px 45px 0px 45px;
+
+
+}
+
+
+#workp {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    transition: .5s ease;
+    backface-visibility: hidden;
+    opacity: 1;
+}
+
+#workp:hover {
+
+    opacity: 0.3;
+}
+
+
+
+
+/*end*/
+
+/*cv page*/
+
+.cv_container {
+    background-color: #BEBFC4;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: auto;
+    width: 77%;
+    padding: 4% 2%;
+}
+
+/*end*/
+
+/*blog*/
+
+.submission {
+    margin: 0px;
+    overflow: hidden;
+}
+
+.submission_one img {
+    float: right;
+    margin: 0;
+    background-position: top;
+    background-repeat: no-repeat;
+    text-align: center;
+    height: 150px;
+}
+
+#post1 {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    transition: .5s ease;
+    backface-visibility: hidden;
+    opacity: 1;
+}
+
+#post1:hover {
+    opacity: 0.3;
+}
+
+.submission_two {
+    width: 45%;
+    float: right;
+    margin: 0;
+    height: 350px;
+}
+
+
+
+#post1 {
+    width: 45%;
+    height: 350px;
+    overflow: hidden;
+    object-fit: cover;
+}
+
+
+
+.blog_info {
+    font-family: 'Volkhov', serif;
+    font-size: 15px;
+    color: #000;
+    padding: 20px 20px 30px 20px;
+    text-align: center;
+    display: block;
+    margin: 0;
+
+}
+
+.read_more {
+    font-family: 'Volkhov', serif;
+    font-size: 17px;
+    color: #000;
+    padding: 10px 10px 10px 10px;
+    margin: 0px;
+    text-align: center;
+    text-decoration: none;
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+
+}
+
+.read_more:hover {
+    font-family: 'Volkhov', serif;
+    text-decoration: none;
+    color: #CC6A18;
+    background-color: #fff;
+    opacity: 1;
+    font-size: 17px;
+    top: 50%;
+    left: 50%;
+}
+
+#photos2 {
+    /* Prevent vertical gaps */
+    line-height: 10px;
+    -webkit-column-count: 2;
+    -webkit-column-gap: 1px;
+    -moz-column-count: 2;
+    -moz-column-gap: 1px;
+    column-count: 2;
+    column-gap: 1px;
+}
+
+
+
+/*end */
+
+/*project pages*/
+
+.item {
+    width: 260px;
+    height: 260px;
+    border-radius: 5%;
+    position: relative;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+    cursor: default;
+
+}
+
+.main {}
+
+.section-grid {
+    line-height: 10px;
+    -webkit-column-count: 3;
+    -webkit-column-gap: 5px;
+    -moz-column-count: 3;
+    -moz-column-gap: 5px;
+    column-count: 3;
+    column-gap: 5px;
+    margin: 10px 10px 150px 130px;
+
+}
+
+.info-wrap,
+.info {
+    position: absolute;
+    width: 220px;
+    height: 220px;
+    border-radius: 60%;
+
+    -webkit-transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+    -ms-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+
+    -webkit-perspective: 800px;
+    -moz-perspective: 800px;
+    -o-perspective: 800px;
+    -ms-perspective: 800px;
+    perspective: 800px;
+}
+
+.info-wrap {
+    top: 20px;
+    left: 20px;
+
+    background: #f9f9f9 url(../images/bg.jpg);
+    box-shadow: 0 0 0 20px rgba(255, 255, 255, 0.2),
+    inset 0 0 3px rgba(115, 114, 23, 0.8);
+
+    object-fit: cover;
+    line-height: 10px;
+
+    -webkit-column-count: 3;
+    -webkit-column-gap: 5px;
+    -moz-column-count: 3;
+    -moz-column-gap: 5px;
+    column-count: 3;
+    column-gap: 5px;
+
+}
+
+
+
+.info {
+    position: absolute;
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;
+
+    -webkit-transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+    -ms-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    -o-transform-style: preserve-3d;
+    -ms-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+
+}
+
+.info > div {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background-position: center center;
+
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -o-backface-visibility: hidden;
+    -ms-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.info .info-back {
+    -webkit-transform: rotate3d(0, 1, 0, 180deg);
+    -moz-transform: rotate3d(0, 1, 0, 180deg);
+    -o-transform: rotate3d(0, 1, 0, 180deg);
+    -ms-transform: rotate3d(0, 1, 0, 180deg);
+    transform: rotate3d(0, 1, 0, 180deg);
+    background: #808D24;
+}
+
+
+/* Work page boxes*/
+
+.img-1-work {
+    background-image: url(style/first_to_forward.jpg);
+    object-fit: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
+}
+
+.img-2-work {
+    background-image: url(style/mushroom.jpg);
+    object-fit: cover;
+    background-position: left;
+    background-repeat: no-repeat;
+}
+
+.img-3-work {
+    background-image: url(style/gin&t.jpg);
+    object-fit: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
+}
+
+/* Box title*/
+
+.info h3 {
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 14px;
+    margin: 0 15px;
+    padding: 40px 0 0 0;
+    height: 90px;
+    font-family: 'Open Sans', Arial, sans-serif;
+    text-shadow: 0 0 1px #fff,
+    0 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+/* box text*/
+
+.info p {
+    color: #fff;
+    padding: 10px 5px;
+    font-style: italic;
+    margin: 0 30px;
+    font-size: 12px;
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.info p a {
+    display: block;
+    color: #fff;
+    color: rgba(255, 255, 255, 0.7);
+    font-style: normal;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 9px;
+    letter-spacing: 1px;
+    padding-top: 4px;
+    font-family: 'Open Sans', Arial, sans-serif;
+}
+
+/* Box hover on changes */
+
+.info p a:hover {
+    color: #fff222;
+    color: rgba(255, 242, 34, 0.8);
+}
+
+.item:hover .info-wrap {
+    box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.8),
+    inset 0 0 3px rgba(115, 114, 23, 0.8);
+}
+
+.item:hover .info {
+    -webkit-transform: rotate3d(0, 1, 0, -180deg);
+    -moz-transform: rotate3d(0, 1, 0, -180deg);
+    -o-transform: rotate3d(0, 1, 0, -180deg);
+    -ms-transform: rotate3d(0, 1, 0, -180deg);
+    transform: rotate3d(0, 1, 0, -180deg);
+}
+
+.accordion {
+
+    background-position: left;
+    background-repeat: no-repeat;
+    background-color: white;
+    color: #111;
+    cursor: pointer;
+    padding: 18px;
+    height: 150px;
+    width: 100%;
+    font-family: 'Volkhov', serif;
+    text-align: center;
+    font-size: 20;
+    text-align: center;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+}
+
+#logo1 {
+    background-image: url(style/first_to_forward.png);
+}
+
+#img_button {
+
+    width: 30px;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+
+.active,
+.accordion:hover {
+    background-color: #808D24;
+}
+
+/* Style the accordion panel. Note: hidden by default */
+
+.panel {
+    padding: 0 18px;
+    background-color: white;
+    display: none;
+    overflow: hidden;
+    max-height: auto;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+
+.accordion:after {
+    content: '\02795';
+    /* Unicode character for "plus" sign (+) */
+    font-size: 13px;
+    color: #777;
+    float: right;
+    margin-left: 5px;
+}
+
+.active:after {
+    content: "\2796";
+    /* Unicode character for "minus" sign (-) */
+}
+
+
+/*Top scroll button*/
+
+#myBtn {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Fixed/sticky position */
+    bottom: 25px;
+    /* Place the button at the bottom of the page */
+    right: 35px;
+    /* Place the button 30px from the right */
+    z-index: 99;
+    /* Make sure it does not overlap */
+    border: none;
+    /* Remove borders */
+    outline: none;
+    /* Remove outline */
+    background-color: #808D24;
+    /* Set a background color */
+    color: white;
+    /* Arow color */
+    cursor: pointer;
+    /* Add a mouse pointer on hover */
+    padding: 15px;
+    /* Some padding */
+    border-radius: 100px;
+    /* Rounded corners */
+    font-size: 22px;
+    /* Increase font size */
+}
+
+#myBtn:hover {
+    background-color: #555;
+    /* Add a dark-grey background on hover */
+}
+
+/*end*/
