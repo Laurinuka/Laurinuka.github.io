@@ -24,14 +24,22 @@ p {
     text-align: center;
     color: #000;
     font-family: 'Volkhov', serif;
-    text-align: center;
 
 }
 
 #abouttext {
     color: black;
-    margin: 115px 100px 40px 740px;
+    margin: 20px 20px 190px 20px;
     text-align: left;
+}
+
+#projecttext {
+    color: black;
+    margin: auto;
+    text-align: left;
+    padding: 40px;
+    text-align: center;
+
 }
 
 #blogtext {
@@ -67,7 +75,7 @@ h3 {
     margin-right: auto;
     height: auto;
     width: 75%;
-    padding: 4% 2%;
+    padding: 6% 2%;
     font-family: 'Volkhov', serif;
 }
 
@@ -84,19 +92,28 @@ h4 {
     padding: 4% 2%;
 }
 
-.project_titles {
-    font-size: 27px;
-    color: #000;
-    padding: 20px 20px 20px 20px;
-    margin: 0px;
-    text-align: center;
-    text-decoration: none;
+h6 {
+    position: absolute;
+    top: 80px;
+    left: 0;
+    width: 100%;
 }
 
-.project_titles:hover {
-    text-decoration: none;
-    color: #CC6A18;
+h6 span {
+    color: white;
+    font: bold 24px/45px 'Volkhov', serif;
+    letter-spacing: -1px;
+    background: rgb(0, 0, 0);
+    /* fallback color */
+    background: rgba(0, 0, 0, 0.7);
+    padding: 10px;
 }
+
+h2 span.spacer {
+    padding: 0 5px;
+}
+
+
 
 .visit {
     font-family: 'Volkhov', serif;
@@ -108,11 +125,6 @@ h4 {
     text-decoration: none;
 }
 
-.visit:hover {
-    font-family: 'Volkhov', serif;
-    text-decoration: none;
-    color: #CC6A18;
-}
 
 
 

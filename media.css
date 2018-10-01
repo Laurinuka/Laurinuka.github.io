@@ -24,6 +24,28 @@
         margin: 20px 20px 20px 20px;
         width: 95%;
     }
+    #projecttext {
+        color: black;
+        margin: 10px 10px 40px 10px;
+        text-align: center;
+    }
+    .projectsph {
+        background-position: top;
+        background-repeat: no-repeat;
+        text-align: center;
+        margin: 20px 20px 20px 20px;
+        width: 95%;
+        height: auto;
+    }
+    .projects {
+        position: relative;
+        width: 100%;
+        height: auto;
+        display: block;
+        margin-bottom: 120px;
+
+
+    }
     .carousel {
         position: relative;
         width: 80%;

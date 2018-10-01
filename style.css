@@ -50,49 +50,20 @@ body {
     margin: 0;
 }
 
-/*
-#aboutpage1background {
-    margin: 100px 50px 50px 50px;
-    height: auto;
-    color: #fff;
-}
-*/
+
 
 /*sizing for all pages tgat follow. It will stay seperated until later date due to the fact some changes may take place*/
 
-#page2background {
-    margin: 100px 50px 50px 50px;
-    height: auto;
-    color: #fff;
-}
-
-#page3background {
-    margin: 100px 50px 50px 50px;
-    height: auto;
-    color: #fff;
-
-}
-
-#page4background {
-    margin: 100px 50px 50px 50px;
-    height: auto;
-    color: #fff;
-
-}
-
-#page5background {
-    margin: 100px 50px 50px 50px;
-    height: auto;
-    color: #fff;
-
-}
-
+#page2background,
+#page3background,
+#page4background,
+#page5background,
 #page6background {
-    margin: 100px 50px 50px 50px;
+    margin: 100px 80px 100px 80px;
     height: auto;
     color: #fff;
-
 }
+
 
 /* About page picture. This possitions the photo to the left hand side of the text. */
 
@@ -100,8 +71,8 @@ body {
     background-position: top;
     background-repeat: no-repeat;
     text-align: center;
-    margin: 100px 50px 50px 140px;
-    width: 40%;
+    margin: 20px;
+    width: 50%;
 }
 
 /* This sets up three colums for the photo galeries*/
@@ -323,22 +294,6 @@ body {
 }
 
 
-#workp {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
-    transition: .5s ease;
-    backface-visibility: hidden;
-    opacity: 1;
-}
-
-#workp:hover {
-
-    opacity: 0.3;
-}
-
-
 
 
 /*end*/
@@ -462,139 +417,40 @@ body {
 
 /*project pages*/
 
-.item {
-    width: 260px;
-    height: 260px;
-    border-radius: 5%;
+.projects,
+#first_one {
     position: relative;
-    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
-    cursor: default;
-
-}
-
-.main {}
-
-.section-grid {
-    line-height: 10px;
-    -webkit-column-count: 3;
-    -webkit-column-gap: 5px;
-    -moz-column-count: 3;
-    -moz-column-gap: 5px;
-    column-count: 3;
-    column-gap: 5px;
-    margin: 10px 10px 150px 130px;
-
-}
-
-.info-wrap,
-.info {
-    position: absolute;
-    width: 220px;
-    height: 220px;
-    border-radius: 60%;
-
-    -webkit-transition: all 0.4s ease-in-out;
-    -moz-transition: all 0.4s ease-in-out;
-    -o-transition: all 0.4s ease-in-out;
-    -ms-transition: all 0.4s ease-in-out;
-    transition: all 0.4s ease-in-out;
-
-    -webkit-perspective: 800px;
-    -moz-perspective: 800px;
-    -o-perspective: 800px;
-    -ms-perspective: 800px;
-    perspective: 800px;
-}
-
-.info-wrap {
-    top: 20px;
-    left: 20px;
-
-    background: #f9f9f9 url(../images/bg.jpg);
-    box-shadow: 0 0 0 20px rgba(255, 255, 255, 0.2),
-    inset 0 0 3px rgba(115, 114, 23, 0.8);
-
-    object-fit: cover;
-    line-height: 10px;
-
-    -webkit-column-count: 3;
-    -webkit-column-gap: 5px;
-    -moz-column-count: 3;
-    -moz-column-gap: 5px;
-    column-count: 3;
-    column-gap: 5px;
-
-}
-
-
-
-.info {
-    position: absolute;
-    width: 220px;
-    height: 220px;
-    border-radius: 50%;
-
-    -webkit-transition: all 0.4s ease-in-out;
-    -moz-transition: all 0.4s ease-in-out;
-    -o-transition: all 0.4s ease-in-out;
-    -ms-transition: all 0.4s ease-in-out;
-    transition: all 0.4s ease-in-out;
-
-    -webkit-transform-style: preserve-3d;
-    -moz-transform-style: preserve-3d;
-    -o-transform-style: preserve-3d;
-    -ms-transform-style: preserve-3d;
-    transform-style: preserve-3d;
-
-}
-
-.info > div {
-    display: block;
-    position: absolute;
     width: 100%;
-    height: 100%;
-    border-radius: 50%;
-    background-position: center center;
+    height: auto;
+    display: block;
+    margin-bottom: 200px;
 
-    -webkit-backface-visibility: hidden;
-    -moz-backface-visibility: hidden;
-    -o-backface-visibility: hidden;
-    -ms-backface-visibility: hidden;
-    backface-visibility: hidden;
+
 }
 
-.info .info-back {
-    -webkit-transform: rotate3d(0, 1, 0, 180deg);
-    -moz-transform: rotate3d(0, 1, 0, 180deg);
-    -o-transform: rotate3d(0, 1, 0, 180deg);
-    -ms-transform: rotate3d(0, 1, 0, 180deg);
-    transform: rotate3d(0, 1, 0, 180deg);
-    background: #808D24;
+#second_one {
+    position: relative;
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-bottom: 200px;
+
+
 }
 
-
-/* Work page boxes*/
-
-.img-1-work {
-    background-image: url(style/first_to_forward.jpg);
-    object-fit: cover;
+.projectsph {
+    height: 60%;
+    margin-left: auto;
+    margin-right: 30px;
+    float: left;
+    margin-bottom: 20px;
+    padding: 0;
     background-position: bottom;
     background-repeat: no-repeat;
 }
 
-.img-2-work {
-    background-image: url(style/mushroom.jpg);
-    object-fit: cover;
-    background-position: left;
-    background-repeat: no-repeat;
-}
 
-.img-3-work {
-    background-image: url(style/gin&t.jpg);
-    object-fit: cover;
-    background-position: bottom;
-    background-repeat: no-repeat;
-}
+
 
 /* Box title*/
 
@@ -635,87 +491,9 @@ body {
     font-family: 'Open Sans', Arial, sans-serif;
 }
 
-/* Box hover on changes */
 
-.info p a:hover {
-    color: #fff222;
-    color: rgba(255, 242, 34, 0.8);
-}
-
-.item:hover .info-wrap {
-    box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.8),
-    inset 0 0 3px rgba(115, 114, 23, 0.8);
-}
-
-.item:hover .info {
-    -webkit-transform: rotate3d(0, 1, 0, -180deg);
-    -moz-transform: rotate3d(0, 1, 0, -180deg);
-    -o-transform: rotate3d(0, 1, 0, -180deg);
-    -ms-transform: rotate3d(0, 1, 0, -180deg);
-    transform: rotate3d(0, 1, 0, -180deg);
-}
-
-.accordion {
-
-    background-position: left;
-    background-repeat: no-repeat;
-    background-color: white;
-    color: #111;
-    cursor: pointer;
-    padding: 18px;
-    height: 150px;
-    width: 100%;
-    font-family: 'Volkhov', serif;
-    text-align: center;
-    font-size: 20;
-    text-align: center;
-    border: none;
-    outline: none;
-    transition: 0.4s;
-}
-
-#logo1 {
-    background-image: url(style/first_to_forward.png);
-}
-
-#img_button {
-
-    width: 30px;
-}
 
 /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
-
-.active,
-.accordion:hover {
-    background-color: #808D24;
-}
-
-/* Style the accordion panel. Note: hidden by default */
-
-.panel {
-    padding: 0 18px;
-    background-color: white;
-    display: none;
-    overflow: hidden;
-    max-height: auto;
-    overflow: hidden;
-    transition: max-height 0.2s ease-out;
-}
-
-.accordion:after {
-    content: '\02795';
-    /* Unicode character for "plus" sign (+) */
-    font-size: 13px;
-    color: #777;
-    float: right;
-    margin-left: 5px;
-}
-
-.active:after {
-    content: "\2796";
-    /* Unicode character for "minus" sign (-) */
-}
-
 
 /*Top scroll button*/
 
