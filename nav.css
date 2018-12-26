@@ -92,7 +92,7 @@
 #navbar .navlink:hover {
     background-color: #fff;
     /*    color: #CC6A18;*/
-    color: #808D24;
+    color: #333;
     font-weight: bold;
     letter-spacing: 0.2em;
     line-height: 2em;
@@ -101,7 +101,7 @@
 
 #navbar2 .navlink:hover {
     background-color: #fff;
-    color: #808D24;
+    color: #333;
     font-weight: bold;
     letter-spacing: 0.2em;
     line-height: 2em;

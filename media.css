@@ -70,6 +70,16 @@
 
 }
 
+@media (min-width: 800px) {
+    .accordion {
+        display: none;
+    }
+    #boxtext {
+        display: none;
+    }
+
+}
+
 @media (max-width: 800px) {
     #photos {
         -moz-column-count: 1;
@@ -94,6 +104,77 @@
         font-size: 11px;
         opacity: 0.7;
     }
+    #page6 {
+        display: run-in;
+    }
+
+    .accordion {
+        background-image: url(style/orange.jpg);
+        color: #000;
+        cursor: pointer;
+        padding: 30px;
+        margin: 0% 5% 5% 5%;
+        width: 90%;
+        border: none;
+        text-align: center;
+        outline: none;
+        font-size: 15px;
+        transition: 0.4s;
+        font-size: 21px;
+        color: black;
+        font-weight: 900;
+        font-family: 'Volkhov', serif;
+        background-position: top;
+        background-size: cover;
+        background-repeat: no-repeat;
+
+    }
+
+    .active,
+    .accordion:hover {
+        background-image: url(style/orange.jpg);
+        background-position: center;
+        ;
+    }
+    .accordion2 {
+        background-image: url(style/lilacbees.jpg);
+        color: #000;
+        cursor: pointer;
+        padding: 30px;
+        margin: 0% 5% 5% 5%;
+        width: 90%;
+        border: none;
+        text-align: center;
+        outline: none;
+        font-size: 15px;
+        transition: 0.4s;
+        font-size: 21px;
+        color: black;
+        font-weight: 900;
+        font-family: 'Volkhov', serif;
+        background-position: bottom;
+        background-size: cover;
+        background-repeat: no-repeat;
+
+    }
+
+    .active,
+    .accordion2:hover {
+        background-image: url(style/lilacbees.jpg);
+        background-position: center;
+        ;
+    }
+    .panel {
+        padding: 0 18px;
+        display: none;
+        background-color: white;
+        overflow: hidden;
+    }
+    #boxtext {
+        color: black;
+        margin: 20px 20px 20px 20px;
+        text-align: center;
+    }
 }
 
 
@@ -108,6 +189,7 @@
     #navlogo2 {
         display: none;
     }
+
 }
 
 @media only screen and (max-width: 1300px) {
@@ -140,6 +222,7 @@
     #navlogo3 {
         display: none;
     }
+
 
 }
 
