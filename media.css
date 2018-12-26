@@ -1,3 +1,24 @@
+@media (min-width: 2000px) {
+
+    #navbar li {
+        padding: 0px 38px 0px 85px;
+        float: right;
+    }
+    #navlogo,
+    #navlogo2 {
+        padding: 0px 0px 0px 0px;
+        margin: 5px 20px 12px 80px;
+        float: left;
+    }
+    #abouttext {
+        color: black;
+        margin: 20px 20px 430px 20px;
+        text-align: left;
+    }
+
+
+}
+
 @media (max-width: 1200px) {
     #photos {
         -moz-column-count: 3;
@@ -46,17 +67,7 @@
 
 
     }
-    .carousel {
-        position: relative;
-        width: 80%;
-        height: 55%;
-        overflow: hidden;
-        margin: 0 auto;
-        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
-        background-position: top;
-        background-repeat: no-repeat;
-        text-align: center;
-    }
+
 }
 
 @media (max-width: 800px) {
@@ -76,6 +87,12 @@
         text-align: center;
         margin: 20px 20px 20px 20px;
         width: 95%;
+    }
+    #rights {
+        text-align: center;
+        margin: 10px 10px 10px 100px;
+        font-size: 11px;
+        opacity: 0.7;
     }
 }
 
@@ -97,12 +114,33 @@
     #navlogo {
         display: none;
     }
+    #page2background,
+    #page3background,
+    #page4background,
+    #page5background,
+    #page6background {
+        margin: 90px 15px 90px 15px;
+        height: auto;
+        color: #fff;
+    }
 }
 
-@media only screen and (max-width: 580px) {
+@media only screen and (max-width: 410px) {
     #navlogo2 {
         display: none;
     }
+    #navlogo3 {
+        margin: 0.5em;
+    }
+
+
+}
+
+@media only screen and (min-width: 410px) {
+    #navlogo3 {
+        display: none;
+    }
+
 }
 
 @media only screen and (max-width: 1080px) {
@@ -116,14 +154,14 @@
         font-family: 'Volkhov', serif;
         position: fixed;
         top: 0;
-        padding: 0.5em 0em 0em 0em;
+        padding: 0em 0em 0em 0em;
     }
 
     #page1background {
         margin: 14% 15% 0% 15%;
-        height: auto;
+        height: 100vh;
         color: #fff;
-        background-position: top;
+        background-position: center;
         background-repeat: no-repeat;
         background-size: 100%;
         width: 70%;
