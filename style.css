@@ -59,7 +59,8 @@ body {
 #page3background,
 #page4background,
 #page5background,
-#page6background {
+#page6background,
+#page7background {
     margin: 100px 80px 100px 80px;
     height: auto;
     color: #fff;
@@ -90,12 +91,10 @@ body {
 }
 
 
+
 /*
-#work {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
+#page7 #photos img:hover {
+    opacity: 0.1;
 }
 */
 
@@ -105,7 +104,6 @@ body {
     width: 100% !important;
     height: auto !important;
 }
-
 
 
 /* footer beginig*/

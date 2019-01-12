@@ -42,7 +42,7 @@
         background-position: top;
         background-repeat: no-repeat;
         text-align: center;
-        margin: 20px 20px 20px 20px;
+        margin: 20px 0px 20px 20px;
         width: 95%;
     }
     #projecttext {
@@ -77,6 +77,10 @@
     .accordion2 {
         display: none;
     }
+    .accordion3 {
+        display: none;
+    }
+
     #boxtext {
         display: none;
     }
@@ -88,6 +92,12 @@
         -moz-column-count: 1;
         -webkit-column-count: 1;
         column-count: 1;
+    }
+    #rights {
+        text-align: left;
+        margin: 10px 10px 10px 10px;
+        font-size: 11px;
+        opacity: 0.7;
     }
     #abouttext {
         color: black;
@@ -103,7 +113,7 @@
     }
     #rights {
         text-align: center;
-        margin: 10px 10px 10px 100px;
+        margin: 10px 10px 10px 10px;
         font-size: 11px;
         opacity: 0.7;
     }
@@ -164,6 +174,34 @@
     .active,
     .accordion2:hover {
         background-image: url(style/lilacbees.jpg);
+        background-position: center;
+        ;
+    }
+    .accordion3 {
+        background-image: url(style/blue.jpg);
+        color: #000;
+        cursor: pointer;
+        padding: 30px;
+        margin: 0% 5% 5% 5%;
+        width: 90%;
+        border: none;
+        text-align: center;
+        outline: none;
+        font-size: 15px;
+        transition: 0.4s;
+        font-size: 21px;
+        color: black;
+        font-weight: 900;
+        font-family: 'Volkhov', serif;
+        background-position: bottom;
+        background-size: cover;
+        background-repeat: no-repeat;
+
+    }
+
+    .active,
+    .accordion3:hover {
+        background-image: url(style/blue.jpg);
         background-position: center;
         ;
     }
@@ -277,7 +315,6 @@
     #right2 {
 
         background-color: #f2f2f2;
-        /*        background-image: url(style/arches.png);*/
         height: auto;
         width: 100%
     }
@@ -286,7 +323,6 @@
     #right {
 
         background-color: #f2f2f2;
-        /*        background-image: url(style/arches.png);*/
         height: auto;
         width: 100%
     }
