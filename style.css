@@ -92,12 +92,6 @@ body {
 
 
 
-/*
-#page7 #photos img:hover {
-    opacity: 0.1;
-}
-*/
-
 #photos img {
     /* Just in case there are inline attributes */
     margin: 1px;

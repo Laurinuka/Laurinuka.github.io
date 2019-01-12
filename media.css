@@ -122,7 +122,7 @@
     }
 
     .accordion {
-        background-image: url(style/orange.jpg);
+        background-image: url(style/sand_dune_path.jpg);
         color: #000;
         cursor: pointer;
         padding: 30px;
@@ -145,7 +145,7 @@
 
     .active,
     .accordion:hover {
-        background-image: url(style/orange.jpg);
+        background-image: url(style/sand_dune_path.jpg);
         background-position: center;
         ;
     }
